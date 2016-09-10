@@ -37,6 +37,8 @@
 #include <vector>
 #include <iostream>
 
+class Computer;
+
 class Board
 {
 public:
@@ -104,6 +106,15 @@ private:
     *   Accepts actual array coordinates
     */
     bool isMoveValid( int row , int col , char currentPlayerMark ) const;
+
+    // Allow Computer class to access private functions
+    friend class Computer;
+
+   /*
+    *   Set position at the specified location
+    *   Used by Computer AI to simulate moves
+    */
+    void setPosAt( int row , int col , char mark );
 };
 
 // Overload operator<< to print board in user-friendly format
