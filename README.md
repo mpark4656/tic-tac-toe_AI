@@ -19,7 +19,6 @@ First Release - 9/10/2016
 3. It still requires input validation.
 
 
-
 Created by mpark.
-
+--------------------------------------------------------
 Copyright © 2016 mpark. All rights reserved.
