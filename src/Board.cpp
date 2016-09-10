@@ -19,8 +19,16 @@ Board::Board(): winnerMark{ ' ' } , lastPlayedMark{ 'U' }
  */
 char Board::getPosAt( int row , int col ) const
 {
-    convertToComputerCoord( row , col );
     return theBoard[row][col];
+}
+
+/*
+ *   Set position at the specified location
+ *   Used by Computer AI to simulate moves
+ */
+void Board::setPosAt( int row , int col , char mark )
+{
+    theBoard[row][col] = mark;
 }
 
 /*
@@ -165,17 +173,19 @@ void Board::convertToComputerCoord( int &x , int &y ) const
  */
 std::ostream & operator<< ( std::ostream &out , const Board &rhs )
 {
+    out << std::endl;
+
     out << "    1   2   3\n\n";
 
-    for( int row = 1 ; row <= 3 ; row++ ) {
-        out << row << "   ";
+    for( int row = 0 ; row < 3 ; row++ ) {
+        out << row + 1 << "   ";
 
-        for( int col = 1 ; col <= 3 ; col++ ) {
-            std::string pipe = ( col == 3 ) ? "" : " | ";
+        for( int col = 0 ; col < 3 ; col++ ) {
+            std::string pipe = ( col == 2 ) ? "" : " | ";
             out << rhs.getPosAt( row , col ) << pipe;
         }
 
-        std::string underline = ( row == 3 ) ? "\n" : "\n   -----------\n";
+        std::string underline = ( row == 2 ) ? "\n" : "\n   -----------\n";
         out << underline;
     }
 
