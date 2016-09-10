@@ -78,7 +78,8 @@ void Game::runComputerFirst()
             break;
         }
 
-        std::cout << humanPlayer.getName() << ", you are " << humanPlayer.getMark() << ". Enter your move [ row col ]: ";
+        std::cout << humanPlayer.getName() << ", you are " 
+                  << humanPlayer.getMark() << ". Enter your move [ row col ]: ";
         std::cin >> row >> col;
 
         while( !gameBoard.makeMove(row , col , humanPlayer.getMark() ) ) {
