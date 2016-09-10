@@ -1,6 +1,16 @@
 # tic-tac-toe_ai
 
-Utilize minimax algorithm to program computer AI to play a game of Tic-Tac-Toe against a human player.
+Utilize minimax algorithm to program computer AI
+
+AI should play a perfect game of Tic-Tac-Toe against a human player.
+
+It's a small project I've personally created to practice good objected-oriented programming design.
+
+Requirements
+--------------------------------------------------------
+1. AI should win against a novice human player
+2. The game should end in a draw when playing against an experienced human player.
+
 
 First Release - 9/10/2016
 --------------------------------------------------------
