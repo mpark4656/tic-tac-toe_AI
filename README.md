@@ -9,11 +9,11 @@ Requirements
 2. The game should end in a draw when playing against an experienced human player.
 
 
-First Release - 9/10/2016
+Completed - 9/10/2016
 --------------------------------------------------------
 1. See main.cpp for an example of a game driver
 2. The computer plays a perfect game against a human player
-3. The program requires input validation.
+3. The program still requires input validation.
 
 
 Created by mpark.
