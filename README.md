@@ -6,7 +6,7 @@
 Requirements
 --------------------------------------------------------
 1. AI should win against a novice human player
-2. The game should end in a draw when playing against an experienced human player.
+2. The game should end in a draw when playing against an experienced human player (Tic-Tac-Toe is a very simple game and a perfect play from both players always results in a draw).
 
 
 Completed - 9/10/2016
